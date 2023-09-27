@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Plane {
+public class Airplane {
 
     @Id
     @Column(name = "id")
