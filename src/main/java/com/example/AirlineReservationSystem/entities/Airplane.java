@@ -1,4 +1,4 @@
-package com.example.FlightReservationSystem.entities;
+package com.example.AirlineReservationSystem.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 
@@ -36,4 +37,8 @@ public class Airplane {
     @ManyToOne
     @JoinColumn(name = "airline_company_id")
     private AirlineCompany airlineCompany;
+
+    @OneToMany(mappedBy = "airplane")
+    private List<Flight> flights;
+
 }

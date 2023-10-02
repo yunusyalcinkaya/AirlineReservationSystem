@@ -1,4 +1,4 @@
-package com.example.FlightReservationSystem.entities;
+package com.example.AirlineReservationSystem.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
-package com.example.FlightReservationSystem.entities;
+package com.example.AirlineReservationSystem.entities;
 
-import com.example.FlightReservationSystem.entities.enums.Gender;
+import com.example.AirlineReservationSystem.entities.enums.Gender;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,6 +28,7 @@ public class Passenger {
     @Column(name = "last_name")
     private String lastName;
 
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
     @Column(name = "birth_date")

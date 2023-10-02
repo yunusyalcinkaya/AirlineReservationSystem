@@ -1,13 +1,13 @@
-package com.example.FlightReservationSystem;
+package com.example.AirlineReservationSystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FlightReservationSystemApplication {
+public class AirlineReservationSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FlightReservationSystemApplication.class, args);
+		SpringApplication.run(AirlineReservationSystemApplication.class, args);
 	}
 
 }
