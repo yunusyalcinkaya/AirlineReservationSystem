@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-@Repository
-public interface IFlightRepository extends JpaRepository<UUID, Flight> {
+
+public interface IFlightRepository extends JpaRepository<Flight, UUID> {
 }

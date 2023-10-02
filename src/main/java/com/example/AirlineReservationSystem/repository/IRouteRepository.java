@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-@Repository
-public interface IRouteRepository extends JpaRepository<UUID, Route> {
+
+public interface IRouteRepository extends JpaRepository<Route, UUID> {
 }
